@@ -1,0 +1,273 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A practical guide to building good habits, breaking bad ones, and mastering small behaviors that lead to remarkable results.",
+    "category": "Science",
+    "available_quantity": 12,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
+    "rate": 4.7
+  },
+  {
+    "id": 2,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A philosophical story about a young shepherd named Santiago who travels in search of a worldly treasure and discovers his destiny.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
+    "rate": 4.6
+  },
+  {
+    "id": 3,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship that teaches how to write clean, maintainable, and efficient code.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/41SH-SvWPxL.jpg",
+    "rate": 4.8
+  },
+  {
+    "id": 4,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Explains how focused work can help you achieve success in a distracted world and improve productivity.",
+    "category": "Science",
+    "available_quantity": 10,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
+    "rate": 4.5
+  },
+  {
+    "id": 5,
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "description": "A novel about a library between life and death where each book offers a chance to live a different version of your life.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81J6APjwxlL.jpg",
+    "rate": 4.3
+  },
+  {
+    "id": 6,
+    "title": "You Don’t Know JS",
+    "author": "Kyle Simpson",
+    "description": "A deep dive into JavaScript core mechanisms, helping developers truly understand how the language works.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg",
+    "rate": 4.1
+  },
+  {
+    "id": 7,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "Explores the history of humankind from the Stone Age to modern times, focusing on how Homo sapiens came to dominate the world.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/713jIoMO3UL.jpg",
+    "rate": 4.2
+  },
+  {
+    "id": 8,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "A personal finance book that contrasts two mindsets about money and investing, encouraging financial independence.",
+    "category": "Science",
+    "available_quantity": 11,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg",
+    "rate": 4.8
+  },
+  {
+    "id": 9,
+    "title": "Think Like a Monk",
+    "author": "Jay Shetty",
+    "description": "Shares lessons from monastic life to help reduce stress, find purpose, and live a meaningful life.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg",
+    "rate": 4.3
+  },
+  {
+    "id": 10,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "description": "A classic book that covers practical programming techniques and mindset to become a better developer.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/51A0-8m6rBL.jpg",
+    "rate": 4.6
+  },
+  {
+    "id": 11,
+    "title": "It Ends With Us",
+    "author": "Colleen Hoover",
+    "description": "A deeply emotional novel that explores love, resilience, and difficult life choices.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81s0B6NYXML.jpg",
+    "rate": 4.5
+  },
+  {
+    "id": 12,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "description": "A comprehensive textbook covering a broad range of algorithms in depth, widely used in computer science education.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/61Mw06x2XcL.jpg",
+    "rate": 4.7
+  },
+   {
+    "id": 21,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A classic novel exploring wealth, love, and the American Dream in the Roaring Twenties.",
+    "category": "Fiction",
+    "available_quantity": 8,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg",
+    "rate": 4.4
+  },
+  {
+    "id": 13,
+    "title": "The 5 AM Club",
+    "author": "Robin Sharma",
+    "description": "A self-help book that teaches how waking up early can transform productivity, health, and personal growth.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL.jpg",
+    "rate": 4.4
+  },
+  {
+    "id": 14,
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "description": "Focuses on innovation and building startups that create new things rather than copying existing ideas.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71m-MxdJ2WL.jpg",
+    "rate": 4.2
+  },
+  {
+    "id": 15,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to programming using JavaScript, covering both fundamentals and advanced concepts.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/91asIC1fRwL.jpg",
+    "rate": 4.5
+  },
+  {
+    "id": 16,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "description": "The first book in the Harry Potter series, introducing a young wizard and his journey at Hogwarts.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg",
+    "rate": 4.9
+  },
+  {
+    "id": 17,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "Explains how human behavior and emotions influence financial decisions more than technical knowledge.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
+    "rate": 4.7
+  },
+  {
+    "id": 18,
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "description": "A guide to improving the design of existing code without changing its behavior.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71e6ndHEwqL.jpg",
+    "rate": 4.6
+  },
+  {
+    "id": 19,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "description": "A counterintuitive self-help book that challenges conventional positivity and encourages focusing on what truly matters.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71QKQ9mwV7L.jpg",
+    "rate": 4.4
+  },
+  {
+    "id": 20,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A classic novel addressing serious issues like racial injustice and moral growth in the American South.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81Otwki3ixL.jpg",
+    "rate": 4.8
+  },
+  {
+    "id": 22,
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "description": "A spiritual guide that teaches living in the present moment and letting go of past and future anxieties.",
+    "category": "Self Development",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg",
+    "rate": 4.5
+  },
+  {
+    "id": 23,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "description": "A deep dive into the core features of JavaScript, focusing on the language’s strengths.",
+    "category": "Programming",
+    "available_quantity": 5,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg",
+    "rate": 4.3
+  },
+  {
+    "id": 24,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "description": "A guide for entrepreneurs on building startups efficiently using continuous innovation.",
+    "category": "Business",
+    "available_quantity": 7,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg",
+    "rate": 4.6
+  },
+  {
+    "id": 25,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "Explains complex concepts of cosmology like black holes and the Big Bang in simple terms.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81pQPZAFWbL.jpg",
+    "rate": 4.5
+  },
+ 
+  {
+    "id": 26,
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "description": "A comprehensive textbook covering the theory and practice of artificial intelligence.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/71x6pU6V1LL.jpg",
+    "rate": 4.6
+  },
+  {
+    "id": 27,
+    "title": "Getting Things Done",
+    "author": "David Allen",
+    "description": "A productivity system that helps organize tasks and manage time effectively.",
+    "category": "Productivity",
+    "available_quantity": 9,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81dQwQlmAXL.jpg",
+    "rate": 4.4
+  }
+]
