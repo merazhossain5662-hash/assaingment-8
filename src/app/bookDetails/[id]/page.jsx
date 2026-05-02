@@ -2,6 +2,8 @@ import React from 'react';
 import data from "../../../../public/data.json"
 import Image from 'next/image';
 import { FaRegHeart } from 'react-icons/fa';
+import 'animate.css';
+
 
 const detailsPage = async({params}) => {
     const {id}=await params;
@@ -9,7 +11,7 @@ const detailsPage = async({params}) => {
   console.log(book);
   
     return (
-     <div className='py-3'>
+     <div className='animate__animated animate__zoomIn py-3'>
            <div className='w-10/12 py-8 items-center   grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 mx-auto'>
            <section>
             <div className="hover-3d ">

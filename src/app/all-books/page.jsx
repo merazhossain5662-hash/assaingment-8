@@ -4,6 +4,8 @@ import data from  "../../../public/data.json"
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 import Link from 'next/link';
+import 'animate.css';
+
 const allBooksPage = () => {
     const [cetagoryType, setCetagoryType]=useState("all");
     const [searchedTitle, setSearchedTitle ]=useState()
@@ -25,7 +27,7 @@ const allBooksPage = () => {
             
     return (
       
-        <div className='w-10/12 mx-auto'>
+        <div className='animate__animated animate__slideInDown w-10/12 mx-auto'>
           
            <div className='flex items-center justify-between my-2'>
             <h1 className='text-xl font-bold'>{cetagoryType.toUpperCase()} BOOKS</h1>
@@ -58,14 +60,14 @@ const allBooksPage = () => {
           }
            </div>
 
-            <div className='grid lg:grid-cols-4 my-7 md:grid-cols-2 sm:grid-cols-1 gap-5'>
+            <div className=' grid lg:grid-cols-4 my-7 md:grid-cols-2 sm:grid-cols-1 gap-5'>
                         {
                            data.map((book)=>{
                            if(searchedTitle){
                               if(book.title.toLocaleLowerCase().includes(searchedTitle.toLocaleLowerCase())){
-                              return <div key={book.id}>
+                              return <div className='' key={book.id}>
            
-                                   <div className="card transition-transform duration-300 ease-in-out hover:scale-95 bg-base-100 w-full rounded-2xl shadow-lg hover:shadow-2xl">
+                                   <div className=" card transition-transform duration-300 ease-in-out hover:scale-95 bg-base-100 w-full rounded-2xl shadow-lg hover:shadow-2xl">
              <figure className="px-3 relative w-full aspect-square bg-base-300 pt-7">
                <Image src={book?.image_url} width={250} height={250} alt={book.title}  className='object-cover h-full'></Image>
              </figure>
