@@ -6,6 +6,7 @@ import { AiOutlineSafetyCertificate } from 'react-icons/ai';
 import { MdOutlineBookmarks } from 'react-icons/md';
 import { FaArrowRight } from 'react-icons/fa';
 import MarqueeContainer from './Marquee';
+import BNBtn from './BNBtn';
 
 const Hero = () => {
     return (
@@ -14,7 +15,7 @@ const Hero = () => {
             <section className='py-5 pl-10 space-y-12 bg-[#f5f8fa]'>
             <h1 className='text-8xl font-semibold text-[#0a627c]'>Find Your Next Read</h1>
             <p className='text-xl text-[#1c7474]'>Explore thousands of books from various geners and <br /> borrow your favorites instantly.</p>
-            <button className='btn items-center transition-transform duration-300 ease-in-out hover:scale-110 bg-[#0a627c] text-white'>Browse Now <FaArrowRight /></button>
+            <BNBtn></BNBtn>
             <div className='flex items-center gap-4 '>
                 <div className='text-center  space-y-2.5 px-2 '>
                     <span className='text-3xl flex justify-center text-[#30bebe]'><GiBookshelf /></span>

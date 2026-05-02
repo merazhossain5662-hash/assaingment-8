@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
-        {children}
+        <main className="scroll-smooth">{children}</main>
         <Footer></Footer>
         </body>
     </html>

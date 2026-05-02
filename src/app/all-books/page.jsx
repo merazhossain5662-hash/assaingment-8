@@ -27,10 +27,12 @@ const allBooksPage = () => {
             
     return (
       
+      <div className="drawer  ">
         <div className='animate__animated animate__slideInDown w-10/12 mx-auto'>
+          <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
           
            <div className='flex items-center justify-between my-2'>
-            <h1 className='text-xl font-bold'>{cetagoryType.toUpperCase()} BOOKS</h1>
+            <h1 className=' text-xl font-bold'>{cetagoryType.toUpperCase()} BOOKS</h1>
             <span>
                <form onSubmit={handleSearch}>
 
@@ -52,20 +54,16 @@ const allBooksPage = () => {
                </form>
             </span>
            </div>
-           <div className='flex items-center gap-3'>
-          {
-            cetagoryBtns.map((c, index)=>{
-               return <button onClick={()=> setCetagoryType(c)} className='bg-transparent backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md btn items-center btn-outline text-[#177794]' key={index}>{c}</button>
-            })
-          }
-           </div>
+            <div className="drawer-content w-full p-4">
+                <label htmlFor="my-drawer-1" className="btn  drawer-button backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md hover:text-[#05767a]">Filter Books</label>
+          
 
             <div className=' grid lg:grid-cols-4 my-7 md:grid-cols-2 sm:grid-cols-1 gap-5'>
                         {
                            data.map((book)=>{
                            if(searchedTitle){
                               if(book.title.toLocaleLowerCase().includes(searchedTitle.toLocaleLowerCase())){
-                              return <div className='' key={book.id}>
+                              return <div className='animate__animated animate__backInUp' key={book.id}>
            
                                    <div className=" card transition-transform duration-300 ease-in-out hover:scale-95 bg-base-100 w-full rounded-2xl shadow-lg hover:shadow-2xl">
              <figure className="px-3 relative w-full aspect-square bg-base-300 pt-7">
@@ -86,7 +84,7 @@ const allBooksPage = () => {
                             }
                            }
                             else if(cetagoryType.toLocaleLowerCase() === book.category.toLocaleLowerCase() || cetagoryType === "all"){
-                                return <div key={book.id}>
+                                return <div className='animate__animated animate__fadeIn' key={book.id}>
            
                                    <div className="card transition-transform duration-300 ease-in-out hover:scale-95 bg-base-100 w-full rounded-2xl shadow-lg hover:shadow-2xl">
              <figure className="px-3 relative w-full aspect-square bg-base-300 pt-7">
@@ -105,8 +103,24 @@ const allBooksPage = () => {
                            })
                        }
                                   </div>
+                                  </div>
+                                   <div className="drawer-side z-40">
+                                    <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
+                                    <ul className="menu min-h-full w-64 p-4 bg-base-200 flex  gap-3 flex-col">
+                                      <h1 className='text-lg font-bold '>Select Cetagory</h1>
+                                      <li onClick={()=> {setCetagoryType("all"); document.getElementById("my-drawer-1").checked = false}} className='bg-transparent backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md btn items-center btn-outline text-[#177794]'>ALL</li>
+                                        {
+cetagoryBtns.map((c, index)=>{
+  return <li onClick={()=> {setCetagoryType(c); document.getElementById("my-drawer-1").checked = false}} className='bg-transparent backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md btn items-center btn-outline text-[#177794]' key={index}>{c}</li>
+            })
+          }
+                                    </ul>
 
+                                   </div>
+      
         </div>
+        </div>
+        
     );
 };
 
