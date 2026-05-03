@@ -7,15 +7,15 @@ const loginPage = () => {
         <div className=' bg-[#f4f9fd]'>
            
   <div className="hero min-h-screen">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
+  <div className="hero-content flex-col lg:flex-row-reverse animate__animated animate__zoomIn">
+    <div className="text-center lg:text-left animate__animated lg:animate__slideInRight animate__fadeInDown">
       <h1 className="text-5xl font-bold">Login now!</h1>
       <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+        Access your personalized library and start borrowing books instantly.
+Discover new reads, save your favorites, and manage your reading journey—all in one place.
       </p>
     </div>
-    <div className="card glass  backdrop-blur-3xl border-blur-md border-2 rounded-2xl lg:w-lg md:w-md w-sm shrink-0 shadow-2xl">
+    <div className="card glass animate__animated lg:animate__slideInLeft animate__fadeInUp  backdrop-blur-3xl border-blur-md border-2 rounded-2xl lg:w-lg md:w-md w-sm shrink-0 shadow-2xl">
       <div className="card-body ">
         <fieldset className="fieldset relative">
           <label className="label text-xl text-black font-medium">Email</label>
