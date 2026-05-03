@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
 
 const loginPage = () => {
+ 
 
  const {
     register,
@@ -29,6 +30,12 @@ alert(error.message)
 
 }
 }
+
+const handleGoogleSingin= async()=>{
+   const data = await authClient.signIn.social({
+    provider: "google",
+  });
+ }
     return (
         <div className=' bg-[#f4f9fd]'>
            
@@ -55,11 +62,11 @@ Discover new reads, save your favorites, and manage your reading journey—all i
 <p className=' font-light text-sm'>Don’t Have An Account ? <Link href={"/register"} className=' text-[#1c7474] font-medium hover:underline'> Register </Link></p>  
         <button type='submit' className="btn  bg-[#0a627c] text-white rounded-2xl text-lg font-semibold py-2 my-4">Login</button>
          <p className='absolute mt-64 text-sm lg:ml-57 md:ml-48 ml-40'>OR</p>
-      <div className='border-t border-gray-300'>
-        <button className="btn text-[#0a627c] btn-outline items-center gap-2 w-full rounded-2xl text-lg py-4 font-semibold mt-4"><FaGoogle /> Login with Google</button>
-      </div>
         </fieldset>
+      <div className='border-t border-gray-300'>
+      </div>
        </form>
+        <button onClick={handleGoogleSingin} className="btn text-[#0a627c] btn-outline items-center gap-2 w-full rounded-2xl text-lg py-4 font-semibold mt-4"><FaGoogle /> Login with Google</button>
       </div>
     </div>
   </div>

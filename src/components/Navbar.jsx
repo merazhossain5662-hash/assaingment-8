@@ -44,8 +44,8 @@ console.log(user);
  : user? ( <div className='flex gap-3 items-center'>
      <h1 className='text-[#0a627c]'>Hello, <span className='text-lg font-semibold'>{user.name}</span></h1>
     <Image src={user?.image } alt={user.name} width={40} height={40} className='rounded-full p-0.5'></Image>
-    <Link href={"/login"} className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110 border-none bg-[#0a627c] text-white">Log In</Link></div>) : 
-   ( <Link href={"/login"} onClick={async ()=> await authClient.signOut()} className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110 border-none bg-[#0a627c] text-white">LogOut</Link> )
+    <Link onClick={async ()=> await authClient.signOut()} href={"/"} className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110 border-none bg-[#0a627c] text-white">LogOut</Link></div>) : 
+   ( <Link href={"/login"}  className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110 border-none bg-[#0a627c] text-white">Log In</Link> )
     }
   </div>
 </div>
