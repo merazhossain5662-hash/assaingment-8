@@ -1,8 +1,12 @@
-import React from 'react';
 import data from "../../../../public/data.json"
+import React from 'react';
 import Image from 'next/image';
 import { FaRegHeart } from 'react-icons/fa';
 import 'animate.css';
+import { authClient } from '@/lib/auth-client';
+import { headers } from 'next/headers';
+import { auth } from '@/lib/auth';
+import BRBtn from "@/components/BRBtn";
 
 
 const detailsPage = async({params}) => {
@@ -10,6 +14,7 @@ const detailsPage = async({params}) => {
     const book = data.find(d=> d.id == id)
   console.log(book);
   
+
     return (
      <div className='animate__animated animate__zoomIn py-3'>
            <div className='w-10/12 py-8 items-center   grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 mx-auto'>
@@ -42,7 +47,7 @@ const detailsPage = async({params}) => {
             <p>{book.description}</p>
            </section>
         </div>
-        <button className='btn flex mx-auto text-2xl px-10 py-7 bg-[#026b8b] text-white rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110'>Borrow This Book</button>
+        <BRBtn></BRBtn>
         <button className='bg-transparent backdrop-blur-2xl shadow-[#1f7ebd] hover:shadow-lg btn items-center btn-outline text-[#177794] rounded-2xl flex mx-auto text-2xl px-9 py-7 my-4'><FaRegHeart /> Add To Whislist</button>
      </div>
     );
