@@ -1,8 +1,22 @@
+"use client"
 import Link from 'next/link';
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
 
 const loginPage = () => {
+
+ const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const handleLoginSubmit = (data)=>{
+ console.log(data);
+ 
+}
     return (
         <div className=' bg-[#f4f9fd]'>
            
@@ -17,18 +31,23 @@ Discover new reads, save your favorites, and manage your reading journey—all i
     </div>
     <div className="card glass animate__animated lg:animate__slideInLeft animate__fadeInUp  backdrop-blur-3xl border-blur-md border-2 rounded-2xl lg:w-lg md:w-md w-sm shrink-0 shadow-2xl">
       <div className="card-body ">
-        <fieldset className="fieldset relative">
+       <form onSubmit={handleSubmit(handleLoginSubmit)}>
+         <fieldset className="fieldset relative">
           <label className="label text-xl text-black font-medium">Email</label>
-          <input type="email" className="input w-full rounded-2xl bg-base-200" placeholder="Email" />
+          <input type="email"  name='email' {...register("email",  { required: true })} className="input w-full rounded-2xl bg-base-200" placeholder="Email" />
+          {errors.email && <span className="text-red-700 text-md">This field is required.</span>}
+          
           <label className="label text-xl text-black font-medium">Password</label>
-          <input type="password" className="input w-full rounded-2xl bg-base-200" placeholder="Password" />
+          <input type="password" name='password' {...register("password",  { required: true })} className="input w-full rounded-2xl bg-base-200" placeholder="Password" />
+          {errors.password && <span className="text-red-700 text-md">This field is required.</span>}
 <p className=' font-light text-sm'>Don’t Have An Account ? <Link href={"/register"} className=' text-[#1c7474] font-medium hover:underline'> Register </Link></p>  
-        <button className="btn  bg-[#0a627c] text-white rounded-2xl text-lg font-semibold py-2 my-4">Login</button>
+        <button type='submit' className="btn  bg-[#0a627c] text-white rounded-2xl text-lg font-semibold py-2 my-4">Login</button>
          <p className='absolute mt-64 text-sm lg:ml-57 md:ml-48 ml-40'>OR</p>
       <div className='border-t border-gray-300'>
-        <button className="btn  text-[#0a627c] btn-outline items-center gap-2 w-full rounded-2xl text-lg py-4 font-semibold mt-4"><FaGoogle /> Login with Google</button>
+        <button className="btn text-[#0a627c] btn-outline items-center gap-2 w-full rounded-2xl text-lg py-4 font-semibold mt-4"><FaGoogle /> Login with Google</button>
       </div>
         </fieldset>
+       </form>
       </div>
     </div>
   </div>
