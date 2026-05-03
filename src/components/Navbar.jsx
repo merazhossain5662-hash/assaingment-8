@@ -34,7 +34,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Image src={"https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"} alt='user image' width={35} height={35} className='rounded-full p-1'></Image>
+    <Image src={"https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D"} alt='user image' width={35} height={35} className='rounded-full p-1'></Image>
     <Link href={"/login"} className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110  bg-[#0a627c] text-white">LogOut</Link>
   </div>
 </div>

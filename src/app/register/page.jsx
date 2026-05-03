@@ -1,8 +1,14 @@
+
 "use client"
+
+import { authClient } from '@/lib/auth-client';
+import { redirect } from 'next/dist/server/api-utils';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const registerPage = () => {
+  const router =useRouter();
  const {
     register,
     handleSubmit,
@@ -10,9 +16,22 @@ const registerPage = () => {
     formState: { errors },
   } = useForm()
 
-const handleRegisterSubmit = (data)=>{
- console.log(data);
- 
+const handleRegisterSubmit = async(datal)=>{
+  const {name, photo, email, password}=datal
+  const { data, error } = await authClient.signUp.email({
+    name: name, // required
+    email: email, // required
+    password: password, // required
+    image: photo,
+    callbackURL: "/login",
+});
+console.log(data, error);
+if(error){
+alert(error.message)
+}else{
+  alert("succes");
+ router.push("/login")
+}
 }
 
     return (
