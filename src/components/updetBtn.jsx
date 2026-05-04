@@ -35,7 +35,7 @@ document.getElementById("my_modal_1").close();
 }
 
     return (
-        <div className='absolute mt-3 lg:ml-79 md:ml-75 ml-60'>
+        <div className='absolute mt-3 lg:ml-79 md:ml-75 ml-50'>
             {/* Open the modal using document.getElementById('ID').showModal() method */}
 <button className="btn text-xs items-center flex-row" onClick={()=>document.getElementById('my_modal_1').showModal()}><HiMiniPencilSquare /><span>Update </span><span>Profile</span></button>
 <dialog id="my_modal_1" className="modal">

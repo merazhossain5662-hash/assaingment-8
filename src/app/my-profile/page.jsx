@@ -18,7 +18,7 @@ const handleLogoutBtn = async ()=>{
         
     return (
         <div className='bg-[#f4f9fd] py-9'>
-           <div className="animate__animated animate__bounceInRight card space-y-4 relative glass rounded-2xl backdrop-blur-3xl shadow-2xl lg:w-md md:w-md w-sm mx-auto">
+           <div className="animate__animated animate__bounceInRight card space-y-4 relative glass rounded-2xl backdrop-blur-3xl shadow-2xl lg:w-md md:w-md w-xs mx-auto">
                <UpdetBtn ></UpdetBtn>
 <div className="avatar mx-auto mt-5">
   <div className="ring-primary ring-offset-base-100 w-35 rounded-full ring-2 ring-offset-2">

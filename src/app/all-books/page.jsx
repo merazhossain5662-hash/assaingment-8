@@ -27,7 +27,7 @@ const allBooksPage = () => {
             
     return (
       
-      <div className="drawer ">
+      <div className="drawer px-4">
         <div className='animate__animated animate__slideInDown lg:w-10/12 md:w-11/12 w-xs mx-auto'>
           <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
           
