@@ -1,16 +1,24 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
 import React from 'react';
+import { toast, Zoom } from 'react-toastify';
 
 const BRBtn = () => {
     const { data: session } = authClient.useSession();
     const user =session?.user;
     const hanndleBorrowBtn = async()=>{
-        if(user){
-      alert("love you")
-        }else{
-          alert("fuck you")
-        }
+     
+        toast.success(' Book Borrowed Successfully!', {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+transition: Zoom,
+});
       }
     return (
         <div>

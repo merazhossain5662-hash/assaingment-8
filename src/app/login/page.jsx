@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
+import { toast, Zoom } from 'react-toastify';
 
 const loginPage = () => {
  
@@ -24,9 +25,29 @@ const { data, error } = await authClient.signIn.email({
     callbackURL: "/",
 }); 
 if(error){
-alert(error.message)
+toast.error(error.message, {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+transition: Zoom,
+});
 }else{
-  alert("succes");
+    toast.success('Login Successfull!', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Zoom,
+    });
 
 }
 }

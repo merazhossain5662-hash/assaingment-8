@@ -3,9 +3,12 @@
 
 import { authClient } from '@/lib/auth-client';
 import { redirect } from 'next/dist/server/api-utils';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { FaGoogle } from 'react-icons/fa';
+import { toast, Zoom } from 'react-toastify';
 
 const registerPage = () => {
   const router =useRouter();
@@ -16,6 +19,11 @@ const registerPage = () => {
     formState: { errors },
   } = useForm()
 
+  const handleGoogleSingin= async()=>{
+     const data = await authClient.signIn.social({
+      provider: "google",
+    });
+   }
 const handleRegisterSubmit = async(datal)=>{
   const {name, photo, email, password}=datal
   const { data, error } = await authClient.signUp.email({
@@ -27,10 +35,31 @@ const handleRegisterSubmit = async(datal)=>{
 });
 console.log(data, error);
 if(error){
-alert(error.message)
+toast.error(error.message, {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+transition: Zoom,
+});
 }else{
-  alert("succes");
- router.push("/login")
+  toast.success('Register Successfull!', {
+  position: "top-center",
+  autoClose: 5000,
+  hideProgressBar: false,
+  closeOnClick: false,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "dark",
+  transition: Zoom,
+  });
+ router.push("/login");
+  await authClient.signOut()
 }
 }
 
@@ -61,7 +90,10 @@ alert(error.message)
 {errors.checkbox && <span className="text-red-700 text-md">Without Accept This You Can Not Registar.</span>}
  </div>
 
-  <button type='submit' className="btn btn-neutral rounded-2xl text-xl mt-4">Login</button>
+  <button type='submit' className="btn btn-neutral rounded-2xl text-xl mt-4">Register</button>
+   <div className="divider">OR</div>
+   <p className=' font-light text-sm'>Already Have An Account ? <Link href={"/login"} className=' text-[#1c7474] font-medium hover:underline'>Login</Link></p>  
+<button onClick={handleGoogleSingin} className="btn text-[#0a627c] btn-outline items-center gap-2 w-full rounded-2xl text-lg py-4 font-semibold mt-4"><FaGoogle /> Continue with Google</button>
 </fieldset>
            </form>
         </div>

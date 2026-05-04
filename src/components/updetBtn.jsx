@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { HiMiniPencilSquare } from 'react-icons/hi2';
+import { toast, Zoom } from 'react-toastify';
 
 const UpdetBtn = () => {
     
@@ -19,6 +20,17 @@ await authClient.updateUser({
     image: photo,
     name: name,
 })
+toast.success('Profile Updated Successfully!', {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+transition: Zoom,
+});
 document.getElementById("my_modal_1").close();
 }
 

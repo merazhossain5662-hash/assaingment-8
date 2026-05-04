@@ -7,6 +7,7 @@ import { authClient } from '@/lib/auth-client';
 import { headers } from 'next/headers';
 import { auth } from '@/lib/auth';
 import BRBtn from "@/components/BRBtn";
+import WishlistBtn from "@/components/WishlistBtn";
 
 
 const detailsPage = async({params}) => {
@@ -48,7 +49,7 @@ const detailsPage = async({params}) => {
            </section>
         </div>
         <BRBtn></BRBtn>
-        <button className='bg-transparent backdrop-blur-2xl shadow-[#1f7ebd] hover:shadow-lg btn items-center btn-outline text-[#177794] rounded-2xl flex mx-auto text-2xl px-9 py-7 my-4'><FaRegHeart /> Add To Whislist</button>
+        <WishlistBtn></WishlistBtn>
      </div>
     );
 };
