@@ -41,7 +41,7 @@ console.log(user);
   <div className="navbar-end">
   
    {isPending? <span className="loading loading-infinity text-accent loading-xl"></span>
- : user? ( <div className='flex gap-3 items-center'>
+ : user? ( <div className='flex gap-3 lg:flex-row md:flex-row flex-col-reverse items-center'>
      <h1 className='text-[#0a627c]'>Hello, <span className='text-lg font-semibold'>{user.name}</span></h1>
     <Image src={user?.image } alt={user.name} width={40} height={40} className='rounded-full p-0.5'></Image>
     <Link onClick={async ()=> await authClient.signOut()} href={"/"} className="btn h-9 transition-transform duration-300 ease-in-out hover:scale-110 border-none bg-[#0a627c] text-white">LogOut</Link></div>) : 

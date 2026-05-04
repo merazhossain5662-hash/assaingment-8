@@ -16,7 +16,7 @@ const Feedback = () => {
       <FaQuoteLeft  className='text-2xl font-extrabold text-[#0a627c]'/>
       <p className='text-md'>BorrowBox made it so easy to find and borrow books. The process is smooth and the collection is amazing!</p>
     </span>
-  <div className='flex items-center justify-between'>
+  <div className='flex items-center lg:flex-row md:flex-row flex-col justify-between'>
       <span className='flex gap-3 items-center'>
       <Image src={"https://randomuser.me/api/portraits/women/44.jpg"} width={65} height={65} className='rounded-full' alt='Sarah Johnson'></Image>
      <span>
@@ -38,7 +38,7 @@ const Feedback = () => {
       <FaQuoteLeft  className='text-xl font-extrabold text-[#0a627c]'/>
       <p className='text-md'>I love how fast and simple the platform is. I found some great tech books within minutes.</p>
     </span>
-  <div className='flex items-center justify-between'>
+  <div className='flex items-center lg:flex-row md:flex-row flex-col justify-between'>
       <span className='flex gap-3 items-center'>
       <Image src={"https://randomuser.me/api/portraits/men/32.jpg"} width={65} height={65} className='rounded-full' alt='Sarah Johnson'></Image>
      <span>
@@ -60,7 +60,7 @@ const Feedback = () => {
       <FaQuoteLeft  className='text-xl font-extrabold text-[#0a627c]'/>
       <p className='text-md'>The UI is clean and user-friendly. Borrowing books feels effortless now. Highly recommended!</p>
     </span>
-  <div className='flex items-center justify-between'>
+  <div className='flex items-center lg:flex-row md:flex-row flex-col justify-between'>
       <span className='flex gap-3 items-center'>
       <Image src={"https://randomuser.me/api/portraits/women/68.jpg"} width={65} height={65} className='rounded-full' alt='Sarah Johnson'></Image>
      <span>
@@ -82,7 +82,7 @@ const Feedback = () => {
       <FaQuoteLeft  className='text-xl font-extrabold text-[#0a627c]'/>
       <p className='text-md'>A fantastic platform for book lovers. The categories and recommendations are really helpful.</p>
     </span>
-  <div className='flex items-center justify-between'>
+  <div className='flex items-center lg:flex-row md:flex-row flex-col justify-between'>
       <span className='flex gap-3 items-center'>
       <Image src={"https://randomuser.me/api/portraits/men/75.jpg"} width={65} height={65} className='rounded-full' alt='Sarah Johnson'></Image>
      <span>
