@@ -28,7 +28,7 @@ const allBooksPage = () => {
     return (
       
       <div className="drawer ">
-        <div className='animate__animated animate__slideInDown lg:w-10/12 md:w-11/12 w-sm mx-auto'>
+        <div className='animate__animated animate__slideInDown lg:w-10/12 md:w-11/12 w-xs mx-auto'>
           <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
           
            <div className='flex  lg:w-full w-9/12  items-center lg:flex-row md:flex-row flex-col justify-between my-2'>
