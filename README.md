@@ -56,6 +56,16 @@ The goal of BorrowBox is to:
 - react-toastify
 
 ---
+
+---
+
+ ## 👨‍💻 Author
+- Meraz Hossain
+- Jr Frontend Developer
+
+---
+
+
 ## 🚀 Getting Started
 
 ```bash
@@ -70,3 +80,4 @@ npm install
 
 # Run the project
 npm run dev
+
