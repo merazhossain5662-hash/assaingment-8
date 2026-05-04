@@ -15,7 +15,6 @@ const handleLogoutBtn = async ()=>{
 
      const { data: session } = authClient.useSession();
         const user =session?.user;
-        console.log(user);
         
     return (
         <div className='bg-[#f4f9fd] py-9'>

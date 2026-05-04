@@ -69,7 +69,7 @@ const handleGoogleSingin= async()=>{
 Discover new reads, save your favorites, and manage your reading journey—all in one place.
       </p>
     </div>
-    <div className="card glass animate__animated lg:animate__slideInLeft animate__fadeInUp  backdrop-blur-3xl border-blur-md border-2 rounded-2xl lg:w-lg md:w-md w-sm shrink-0 shadow-2xl">
+    <div className="card glass animate__animated lg:animate__slideInLeft animate__fadeInUp  backdrop-blur-3xl border-blur-md border-2 rounded-2xl lg:w-lg md:w-md w-xs shrink-0 shadow-2xl">
       <div className="card-body ">
        <form onSubmit={handleSubmit(handleLoginSubmit)}>
          <fieldset className="fieldset relative">

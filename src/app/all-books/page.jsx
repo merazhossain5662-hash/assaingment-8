@@ -27,11 +27,11 @@ const allBooksPage = () => {
             
     return (
       
-      <div className="drawer  ">
-        <div className='animate__animated animate__slideInDown lg:w-10/12 lg:mx-auto'>
+      <div className="drawer ">
+        <div className='animate__animated animate__slideInDown lg:w-10/12 md:w-11/12 w-full mx-auto'>
           <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
           
-           <div className='flex items-center justify-between my-2'>
+           <div className='flex  lg:w-full w-9/12  items-center lg:flex-row md:flex-row flex-col justify-between my-2'>
             <h1 className=' text-xl font-bold'>{cetagoryType.toUpperCase()} BOOKS</h1>
             <span>
                <form onSubmit={handleSearch}>
@@ -54,7 +54,7 @@ const allBooksPage = () => {
                </form>
             </span>
            </div>
-            <div className="drawer-content w-full p-4">
+            <div className="drawer-content  lg:w-full w-9/12  p-4">
                 <label htmlFor="my-drawer-1" className="btn  drawer-button backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md hover:text-[#05767a]">Filter Books</label>
           
 
@@ -66,7 +66,7 @@ const allBooksPage = () => {
                               return <div className='animate__animated animate__backInUp' key={book.id}>
            
                                    <div className=" card transition-transform duration-300 ease-in-out hover:scale-95 bg-base-100 w-full rounded-2xl shadow-lg hover:shadow-2xl">
-             <figure className="px-3 relative w-full aspect-square bg-base-300 pt-7">
+             <figure className="lg:px-3 px-1 relative w-full aspect-square bg-base-300 pt-7">
                <Image src={book?.image_url} width={250} height={250} alt={book.title}  className='object-cover h-full'></Image>
              </figure>
              <div className="card-body items-center  text-center">

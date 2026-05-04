@@ -13,7 +13,6 @@ import WishlistBtn from "@/components/WishlistBtn";
 const detailsPage = async({params}) => {
     const {id}=await params;
     const book = data.find(d=> d.id == id)
-  console.log(book);
   
 
     return (

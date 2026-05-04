@@ -33,7 +33,6 @@ const handleRegisterSubmit = async(datal)=>{
     image: photo,
     callbackURL: "/login",
 });
-console.log(data, error);
 if(error){
 toast.error(error.message, {
 position: "top-center",
@@ -66,7 +65,7 @@ transition: Zoom,
     return (
         <div className=' bg-[#f4f9fd] py-14'>
            <form onSubmit={handleSubmit(handleRegisterSubmit)}>
-             <fieldset className="animate__animated animate__fadeInDownBig fieldset mx-auto space-y-3 galss shadow-2xl backdrop-blur-3xl rounded-3xl rounded-box lg:w-lg md:w-md w-sm py-6 px-4">
+             <fieldset className="animate__animated animate__fadeInDownBig fieldset mx-auto space-y-3 galss shadow-2xl backdrop-blur-3xl rounded-3xl rounded-box lg:w-lg md:w-md w-xs py-6 px-4">
   <legend className="fieldset-legend text-4xl text-center font-bold">Register</legend>
 
   <label className="label text-lg text-black font-medium">Name</label>
