@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className='text-8xl font-semibold text-[#0a627c]'>Find Your Next Read</h1>
             <p className='text-xl text-[#1c7474]'>Explore thousands of books from various geners and <br /> borrow your favorites instantly.</p>
             <BNBtn></BNBtn>
-            <div className='flex items-center gap-4 '>
+            <div className='flex items-center lg:flex-row flex-col gap-4 '>
                 <div className='text-center  space-y-2.5 px-2 '>
                     <span className='text-3xl flex justify-center text-[#30bebe]'><GiBookshelf /></span>
                    <p className='font-semibold text-[#20758f]'>Thousands Of Books</p>

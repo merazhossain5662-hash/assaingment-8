@@ -28,7 +28,7 @@ const allBooksPage = () => {
     return (
       
       <div className="drawer  ">
-        <div className='animate__animated animate__slideInDown w-10/12 mx-auto'>
+        <div className='animate__animated animate__slideInDown lg:w-10/12 lg:mx-auto'>
           <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
           
            <div className='flex items-center justify-between my-2'>
@@ -58,7 +58,7 @@ const allBooksPage = () => {
                 <label htmlFor="my-drawer-1" className="btn  drawer-button backdrop-blur-2xl shadow-[#6ea6cc] px-7 hover:shadow-md hover:text-[#05767a]">Filter Books</label>
           
 
-            <div className=' grid lg:grid-cols-4 my-7 md:grid-cols-2 sm:grid-cols-1 gap-5'>
+            <div className=' grid lg:grid-cols-4 my-7 md:grid-cols-2 grid-cols-1 gap-5'>
                         {
                            data.map((book)=>{
                            if(searchedTitle){

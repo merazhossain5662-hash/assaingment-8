@@ -77,12 +77,12 @@ const Feedback = () => {
     </div>
   </div>
   <div id="slide4" className="carousel-item relative w-full">
-    <div className='bg-white lg:shadow-2xl shadow  flex flex-col justify-around gap-3 mx-auto w-125 rounded-3xl px-6 py-4'>
+    <div className='bg-white lg:shadow-2xl shadow h-full flex flex-col justify-around gap-3 mx-auto w-125 rounded-3xl px-6 py-4'>
     <span className='flex items-center gap-2 justify-around'>
       <FaQuoteLeft  className='text-xl font-extrabold text-[#0a627c]'/>
       <p className='text-md'>A fantastic platform for book lovers. The categories and recommendations are really helpful.</p>
     </span>
-  <div className='flex items-center lg:flex-row md:flex-row flex-col justify-between'>
+  <div className='flex items-center h-full lg:flex-row md:flex-row flex-col justify-between'>
       <span className='flex gap-3 items-center'>
       <Image src={"https://randomuser.me/api/portraits/men/75.jpg"} width={65} height={65} className='rounded-full' alt='Sarah Johnson'></Image>
      <span>
